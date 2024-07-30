@@ -1,10 +1,10 @@
-#System programming- assignment 4
+# System programming- assignment 4
 this project focuses on templates, stl and iterators in c++.
 It implements a k-ari tree (which its default is a binary tree – k=2)  and all kinds of iterators on it .
 The project includes a TreeGUI.hpp template class for displaying the tree structures using the SDL2 and SDL2_ttf libraries- Each node of the tree is drawn as a circle with text and lines to connect the parent nodes to their children.
 The project also contains a Makefile, Demo.hpp and testing unit for running and checking the code. 
-##Classes:
-###Complex.hpp
+## Classes:
+### Complex.hpp
 This class represents complex numbers and supports various operations
 It has 2 private fields- double real, double imag to represent the real and imaginary part of the complex number.
 it includes this public methods:
@@ -16,7 +16,7 @@ it includes this public methods:
 6.	bool operator!=(const Complex &other) const- operator which compares 2 complex numbers and return true if they are not equal
 7.	bool operator>(const Complex &other) const- operator to check if this complex number is bigger than the other.
 8.	friend ostream &operator<<(ostream &out, const Complex &c)- friend operator which allows us to print the complex number.
-###Node.hpp
+### Node.hpp
 This template class represents a node of the tree ( can store any kind of data). 
 It has 2 private fields:
 1.	T value- the value of the node
@@ -26,7 +26,7 @@ This class includes this public methods:
 2.	T getValue() const – getter for the value of the node
 3.	const vector<Node<T> *> &getChildren() const – getter for the vector of the children of the node
 4.	void addChild(Node<T> &child) – a method which adds a child node to the children vector
-###Tree.hpp
+### Tree.hpp
 This template class represents a tree with two template parameters: T to store any type of node and K for the maximum number of children of the node (its default state is K=2 for binary tree.
 The class has private field Node<T> *root which points to the root node of the tree.
 It has this methods:
