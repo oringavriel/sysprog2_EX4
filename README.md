@@ -36,11 +36,13 @@ It has this methods:
 4.	void add_sub_node(Node<T> &node, Node<T> &sub)- Adds a child node to the parent node.
 it throws an exception if the parent node already has the maximum number of children .
 5.	void displayTreeGUI()- Visualizes the tree using the TreeGUI class.
+
 The Tree class provides several iterators for traversing the tree using internal classes to define the traverse order.
 Each internal class has a constructor for the specific traversal and 3 operators needed for traversing the tree:
 1.	operator* -  Returns the value of the current node
 2.	Operator ++: Moves to the next node by the traversal order
 3.	Operator !=: Checks if the iterator is not equal to another iterator 
+
 The iterators of the tree class are:
 1.	PreOrderIterator- Iterates over the nodes of the tree in preorder traversal order(Root, Left, Right). This iterator works only on binary trees. For a general tree it returns a DFS scan.
 2.	PostOrderIterator- Iterates over the nodes of the tree in postorder traversal order(Left, Right, Root). This iterator works only on binary trees. For a general tree it returns a DFS scan.
@@ -48,6 +50,7 @@ The iterators of the tree class are:
 4.	BFSIterator- Iterates over the nodes of the tree using breadth-first search.
 5.	DFSIterator- Iterates over the nodes of the tree using depth-first search.
 6.	HeapIterator- Iterates over the nodes of the tree as if the tree was a min-heap. 
+
 For each iterator the tree class contains a begin and end methods to start and end the traversal.
 
 
